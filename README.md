@@ -2,8 +2,6 @@
 
 This is a test project for trying to connect cider to figwheel.
 
-It doesn't work at this point - any help is appreciated.
-
 To start up, do
 
 ```
@@ -19,7 +17,6 @@ M-x cider-connect <Enter> 7888
 then in the repl
 
 ```
-(use 'cemerick.piggieback
-     'cljs.repl.browser)
-  (cljs-repl (repl-env))
+(do (use 'figwheel-sidecar.repl-api)
+    (cljs-repl))
 ```
