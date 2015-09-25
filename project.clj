@@ -4,7 +4,7 @@
                  [reagent "0.5.1"]
                  [re-frame "0.4.1"]]
 
-  :source-paths ["src/clj" "src/cljs"]
+  :source-paths ["src/clj"]
 
   :clean-targets ^{:protect false} ["resources/public/js/compiled" "target"]
 
